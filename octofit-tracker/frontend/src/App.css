@@ -1,0 +1,667 @@
+/* 🏴‍☠️ ONE PIECE INSPIRED THEME 🏴‍☠️ */
+
+/* Main App Container - Ocean Adventure */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a4d8f 0%, #1e5a8e 30%, #2d6fa1 70%, #5eb3e4 100%);
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(125, 211, 192, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Pirate Ship Navbar */
+.navbar {
+  background: linear-gradient(90deg, #8b4513 0%, #6b3410 50%, #4a2a0f 100%) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  padding: 0.75rem 1rem;
+  border-bottom: 4px solid #ffd700;
+  position: relative;
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700 0%, #f4c430 50%, #ffd700 100%);
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.6);
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.8rem;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffd700 !important;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.4);
+  transition: all 0.3s ease;
+  letter-spacing: 3px;
+}
+
+.navbar-brand:hover {
+  color: #f4c430 !important;
+  transform: scale(1.1) rotate(-2deg);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 215, 0, 0.8);
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.navbar-logo:hover {
+  transform: rotate(360deg) scale(1.2);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+}
+
+.nav-link {
+  color: #fff8e7 !important;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem !important;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  margin: 0 0.25rem;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+}
+
+.nav-link:hover {
+  background: linear-gradient(135deg, #ffd700 0%, #f4c430 100%);
+  color: #1a1a1a !important;
+  transform: translateY(-3px) scale(1.05);
+  border: 2px solid #ff6b35;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+}
+
+.nav-link.active {
+  background: linear-gradient(135deg, #dc143c 0%, #ff6b35 100%);
+  color: #fff8e7 !important;
+  border: 2px solid #ffd700;
+  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.6);
+}
+
+/* Treasure Chest Container */
+.container {
+  background: linear-gradient(135deg, #fff8e7 0%, #fffef7 50%, #fff8e7 100%);
+  border-radius: 20px;
+  padding: 35px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 0 5px #8b4513, inset 0 2px 10px rgba(255, 215, 0, 0.2);
+  border: 4px solid #ffd700;
+  position: relative;
+  z-index: 1;
+}
+
+/* Grand Line Adventure Hero */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.hero-section h1 {
+  color: #dc143c;
+  font-weight: 900;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-bottom: 25px;
+  text-shadow: 4px 4px 0px #ffd700, 6px 6px 10px rgba(0, 0, 0, 0.5);
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  animation: floatTitle 3s ease-in-out infinite;
+}
+
+@keyframes floatTitle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero-section p {
+  color: #1a1a1a;
+  font-size: 1.3rem;
+  margin-bottom: 35px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255, 215, 0, 0.3);
+}
+
+/* Wanted Poster Card Links */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: visible;
+}
+
+.clickable-card:hover {
+  transform: translateY(-15px) scale(1.05) rotate(2deg);
+  box-shadow: 0 20px 50px rgba(220, 20, 60, 0.6), 0 0 30px rgba(255, 215, 0, 0.4) !important;
+}
+
+.clickable-card .card-body {
+  padding: 35px 25px;
+}
+
+.clickable-card h5 {
+  margin-top: 15px;
+  margin-bottom: 18px;
+  color: #dc143c;
+  font-weight: 900;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Pirate Crew Table */
+.table {
+  margin-top: 20px;
+  background-color: #fff8e7;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid #8b4513;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #dc143c 0%, #ff6b35 100%);
+  color: #fff8e7;
+  border-bottom: 4px solid #ffd700;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  padding: 18px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.table tbody td {
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 15px;
+  border-bottom: 2px solid #f4c430;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #fff8e7;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #fffef7;
+}
+
+.table-hover tbody tr:hover {
+  background: linear-gradient(90deg, #ffd700 0%, #f4c430 100%);
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 20px rgba(220, 20, 60, 0.2);
+}
+
+/* Devil Fruit Power Cards */
+.card {
+  border: 4px solid #8b4513;
+  background: linear-gradient(135deg, #fff8e7 0%, #fffef7 50%, #fff8e7 100%);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), inset 0 2px 5px rgba(255, 215, 0, 0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(90deg, #ffd700 0%, #f4c430 50%, #ffd700 100%);
+}
+
+.card:hover {
+  transform: translateY(-12px) rotate(-1deg);
+  box-shadow: 0 15px 40px rgba(220, 20, 60, 0.5), 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+.card-title {
+  color: #dc143c;
+  font-weight: 900;
+  font-family: 'Bebas Neue', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.card-body {
+  padding: 30px;
+  position: relative;
+}
+
+.card-text {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* Pirate Action Buttons */
+.btn {
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.95rem;
+  font-family: 'Rubik', sans-serif;
+  border: 3px solid transparent;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0a4d8f 0%, #5eb3e4 100%);
+  border: 3px solid #ffd700;
+  color: #fff8e7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5eb3e4 0%, #7dd3c0 100%);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(94, 179, 228, 0.6);
+  border-color: #f4c430;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #7dd3c0 0%, #4a9d7f 100%);
+  border: 3px solid #ffd700;
+  color: #fff8e7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #5eb3e4 0%, #7dd3c0 100%);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(125, 211, 192, 0.6);
+  border-color: #f4c430;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #dc143c 0%, #ff6b35 100%);
+  border: 3px solid #ffd700;
+  color: #fff8e7;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #ff6b35 0%, #dc143c 100%);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.6);
+  border-color: #f4c430;
+}
+
+/* Adventure Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #dc143c;
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #dc143c;
+  text-shadow: 3px 3px 0px #ffd700, 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 3rem;
+}
+
+h2 {
+  color: #0a4d8f;
+  text-shadow: 2px 2px 0px #7dd3c0, 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  color: #ff6b35;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+h4, h5, h6 {
+  color: #1a1a1a;
+  text-shadow: 1px 1px 3px rgba(255, 215, 0, 0.3);
+}
+
+/* Treasure Map Links */
+a {
+  color: #0a4d8f;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700 0%, #f4c430 100%);
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  color: #dc143c;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Pirate Text */
+p {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.text-muted {
+  color: #6b3410 !important;
+}
+
+.lead {
+  color: #1a1a1a;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255, 215, 0, 0.2);
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.error-alert {
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* Bounty Badges */
+.badge {
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  font-family: 'Bebas Neue', sans-serif;
+  border: 2px solid #1a1a1a;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.badge-primary {
+  background: linear-gradient(135deg, #0a4d8f 0%, #5eb3e4 100%);
+  color: #fff8e7;
+  border-color: #ffd700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.badge-success {
+  background: linear-gradient(135deg, #7dd3c0 0%, #4a9d7f 100%);
+  color: #fff8e7;
+  border-color: #ffd700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, #f4c430 0%, #ffd700 100%);
+  color: #1a1a1a;
+  border-color: #8b4513;
+  text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.3);
+}
+
+.badge-danger {
+  background: linear-gradient(135deg, #dc143c 0%, #ff6b35 100%);
+  color: #fff8e7;
+  border-color: #ffd700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Ship Captain's Modal */
+.modal-header {
+  background: linear-gradient(135deg, #dc143c 0%, #ff6b35 100%);
+  color: #fff8e7;
+  border-bottom: 4px solid #ffd700;
+  border-radius: 15px 15px 0 0;
+  padding: 20px 25px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.modal-content {
+  border-radius: 15px;
+  border: 4px solid #8b4513;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #fff8e7 0%, #fffef7 100%);
+}
+
+.modal-footer {
+  border-top: 3px solid #ffd700;
+  background: linear-gradient(135deg, #fffef7 0%, #fff8e7 100%);
+  border-radius: 0 0 15px 15px;
+  padding: 20px 25px;
+}
+
+/* Log Book Forms */
+.form-control, .form-select {
+  border-radius: 12px;
+  border: 3px solid #8b4513;
+  padding: 12px 18px;
+  transition: all 0.3s ease;
+  background-color: #fff8e7;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 0.3rem rgba(255, 215, 0, 0.4), inset 0 2px 8px rgba(220, 20, 60, 0.1);
+  background-color: #fffef7;
+}
+
+.form-label {
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  font-family: 'Bebas Neue', sans-serif;
+  text-shadow: 1px 1px 2px rgba(255, 215, 0, 0.3);
+}
+
+/* Deserted Island Empty State */
+.empty-state {
+  text-align: center;
+  padding: 70px 50px;
+  color: #1a1a1a;
+  background: linear-gradient(135deg, #fff8e7 0%, #fffef7 50%, #fff8e7 100%);
+  border-radius: 20px;
+  border: 4px dashed #8b4513;
+  margin: 25px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.empty-state::before {
+  content: '🏝️';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 3rem;
+  opacity: 0.2;
+}
+
+.empty-state h3 {
+  color: #dc143c;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.empty-state p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+/* Sailing Ship Loading */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  color: #dc143c;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.error-alert {
+  border-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff6b35 0%, #dc143c 100%);
+  border: 4px solid #8b4513;
+  color: #fff8e7;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(220, 20, 60, 0.4);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .hero-section {
+    padding: 40px 15px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .table {
+    font-size: 0.9rem;
+  }
+  
+  .navbar-logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .nav-link {
+    margin: 0.3rem 0;
+  }
+}
+
+/* Smooth Sailing */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Treasure Selection */
+::selection {
+  background-color: #ffd700;
+  color: #1a1a1a;
+  text-shadow: 1px 1px 2px rgba(220, 20, 60, 0.3);
+}
+
+/* Ocean Scrollbar (already defined in index.css) */
+
+/* Voyage Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.container {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Wanted Poster Card Icons */
+.card h3 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+.card h5 {
+  color: #dc143c;
+  font-weight: 900;
+  margin-bottom: 18px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+}
