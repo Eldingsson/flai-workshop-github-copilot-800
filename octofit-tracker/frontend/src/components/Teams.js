@@ -17,7 +17,7 @@ const Teams = () => {
         const baseUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`;
         
         // Fetch teams
-        const teamsResponse = await fetch(`${baseUrl}/teams/`);
+        const teamsResponse = await fetch(`https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/teams/`);
         if (!teamsResponse.ok) {
           throw new Error(`HTTP error! status: ${teamsResponse.status}`);
         }

@@ -34,7 +34,7 @@ const Leaderboard = () => {
         const baseUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`;
         
         // Fetch leaderboard
-        const leaderboardResponse = await fetch(`${baseUrl}/leaderboard/`);
+        const leaderboardResponse = await fetch(`https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/leaderboard/`);
         if (!leaderboardResponse.ok) {
           throw new Error(`HTTP error! status: ${leaderboardResponse.status}`);
         }
