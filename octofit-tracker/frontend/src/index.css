@@ -1,13 +1,55 @@
+/* One Piece Inspired Theme */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Rubik:wght@400;500;700;900&display=swap');
+
+:root {
+  /* One Piece Color Palette */
+  --ocean-blue: #0a4d8f;
+  --sky-blue: #5eb3e4;
+  --straw-hat: #f4c430;
+  --treasure-gold: #ffd700;
+  --luffy-red: #dc143c;
+  --pirate-black: #1a1a1a;
+  --wood-brown: #8b4513;
+  --sail-white: #fff8e7;
+  --sea-foam: #7dd3c0;
+  --sunset-orange: #ff6b35;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #0a4d8f 0%, #1e5a8e 50%, #2d6fa1 100%);
+  color: var(--pirate-black);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Adventurous Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', 'Bangers', cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Scroll bar styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ocean-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--treasure-gold);
+  border-radius: 6px;
+  border: 2px solid var(--ocean-blue);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--straw-hat);
 }
